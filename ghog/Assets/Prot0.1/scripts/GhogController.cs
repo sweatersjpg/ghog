@@ -45,7 +45,7 @@ public class GhogController : MonoBehaviour
 
         Collider[] hits = Physics.OverlapSphere(new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z), 0.4f /*, LayerMask.GetMask("Environment")*/);
         bool touchingGround = false;
-        foreach (Collider hit in hits) if (hit.name != "Ghog" && hit.name != "RoomHB") touchingGround = true;
+        foreach (Collider hit in hits) if (hit.name != "Ghog" && hit.tag != "roomLighting") touchingGround = true;
 
         if (touchingGround)
         {
@@ -99,12 +99,12 @@ public class GhogController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.name == "RoomHB")
+        if (other.gameObject.tag == "roomLighting")
         {
-            Vector3 cameraPos = other.transform.parent.Find("CameraPosition").position;
+            Vector3 cameraPos = other.transform.Find("CameraPosition").position;
             cameraController.MoveTo(cameraPos);
 
-            GameObject light = other.transform.parent.Find("RoomLight").gameObject;
+            GameObject light = other.transform.Find("RoomLight").gameObject;
             light.SetActive(true);
         }
 
@@ -113,9 +113,9 @@ public class GhogController : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.name == "RoomHB")
+        if (other.gameObject.tag == "roomLighting")
         {
-            GameObject light = other.transform.parent.Find("RoomLight").gameObject;
+            GameObject light = other.transform.Find("RoomLight").gameObject;
             light.SetActive(false);
         }
 
