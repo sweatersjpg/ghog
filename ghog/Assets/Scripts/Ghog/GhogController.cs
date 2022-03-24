@@ -8,7 +8,7 @@ public class GhogController : MonoBehaviour
     Rigidbody rb;
     public Vector3 velocity;
 
-    public GameObject mainCamera;
+    //GameObject mainCamera;
 
     public float gravity = -0.05f;
     public float deceleration = 0.9f;
@@ -20,12 +20,17 @@ public class GhogController : MonoBehaviour
 
     CameraController cameraController;
 
+    bool up;
+    bool down;
+    bool left;
+    bool right;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        cameraController = mainCamera.GetComponent<CameraController>();
+        cameraController = Camera.main.GetComponent<CameraController>();
 
         velocity = new Vector3(0, 1, 0);
     }
@@ -38,11 +43,22 @@ public class GhogController : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump")) jumpPressed = 5;
         if (Input.GetButtonUp("Jump")) jumpReleased = 5;
+
+        left = Input.GetKey("a");
+        right = Input.GetKey("d");
+        up = Input.GetKey("w");
+        down = Input.GetKey("s");
+
+        if (Input.GetKeyDown("e")) GetComponent<GhogAnimator>().StartBark();
     }
 
     private void FixedUpdate()
     {
+        Move();
+    }
 
+    private void Move()
+    {
         Collider[] hits = Physics.OverlapSphere(new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z), 0.4f /*, LayerMask.GetMask("Environment")*/);
         bool touchingGround = false;
         foreach (Collider hit in hits) if (hit.name != "Ghog" && hit.tag != "roomLighting") touchingGround = true;
@@ -50,7 +66,7 @@ public class GhogController : MonoBehaviour
         if (touchingGround)
         {
             isGrounded = true;
-            if(velocity.y < 0) velocity.y = 0;
+            if (velocity.y < 0) velocity.y = 0;
         }
 
         if (velocity.y <= gravity * 16) isGrounded = false;
@@ -75,10 +91,10 @@ public class GhogController : MonoBehaviour
         //velocity.x += Input.GetAxis("Horizontal") * acc;
         //velocity.z += Input.GetAxis("Vertical") * acc;
 
-        if (Input.GetKey("a")) velocity.x -= acc;
-        if (Input.GetKey("d")) velocity.x += acc;
-        if (Input.GetKey("w")) velocity.z += acc;
-        if (Input.GetKey("s")) velocity.z -= acc;
+        if (left) velocity.x -= acc;
+        if (right) velocity.x += acc;
+        if (up) velocity.z += acc;
+        if (down) velocity.z -= acc;
 
         velocity.y += gravity;
         if (velocity.y < 0) velocity.y += gravity;
@@ -93,7 +109,6 @@ public class GhogController : MonoBehaviour
         velocity.z *= deceleration;
 
         rb.AddForce(velocity - rb.velocity, ForceMode.VelocityChange);
-
     }
 
     private void OnTriggerEnter(Collider other)

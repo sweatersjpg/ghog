@@ -11,8 +11,6 @@ public class AnimationController : MonoBehaviour
     SpriteRenderer sr;
     Camera cam;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
