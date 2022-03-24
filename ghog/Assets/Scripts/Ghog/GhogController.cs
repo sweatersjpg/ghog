@@ -49,7 +49,12 @@ public class GhogController : MonoBehaviour
         up = Input.GetKey("w");
         down = Input.GetKey("s");
 
-        if (Input.GetKeyDown("e")) GetComponent<GhogAnimator>().StartBark();
+        if (Input.GetKeyDown("e"))
+        {
+            // trigger nearby objects
+            TelemetryLogger.Log(this, "Bark", transform.position);
+            GetComponent<GhogAnimator>().StartBark();
+        }
     }
 
     private void FixedUpdate()
@@ -61,7 +66,7 @@ public class GhogController : MonoBehaviour
     {
         Collider[] hits = Physics.OverlapSphere(new Vector3(transform.position.x, transform.position.y - 0.2f, transform.position.z), 0.4f /*, LayerMask.GetMask("Environment")*/);
         bool touchingGround = false;
-        foreach (Collider hit in hits) if (hit.name != "Ghog" && hit.tag != "roomLighting") touchingGround = true;
+        foreach (Collider hit in hits) if (hit.gameObject.layer == LayerMask.NameToLayer("Walkable")) touchingGround = true;
 
         if (touchingGround)
         {
@@ -111,28 +116,38 @@ public class GhogController : MonoBehaviour
         rb.AddForce(velocity - rb.velocity, ForceMode.VelocityChange);
     }
 
-    private void OnTriggerEnter(Collider other)
+    Transform currentRoom = null;
+    Transform previousRoom;
+
+    private void OnTriggerStay(Collider other)
     {
+        if (other.transform == currentRoom) return;
+        if (other.transform == previousRoom) return;
 
         if (other.gameObject.tag == "roomLighting")
         {
-            Vector3 cameraPos = other.transform.Find("CameraPosition").position;
+            if (currentRoom != null) currentRoom.GetComponentInChildren<Light>().gameObject.SetActive(false);
+            previousRoom = currentRoom;
+
+            currentRoom = other.transform;
+
+            Vector3 cameraPos = currentRoom.Find("CameraPosition").position;
             cameraController.MoveTo(cameraPos);
 
-            GameObject light = other.transform.Find("RoomLight").gameObject;
-            light.SetActive(true);
+            currentRoom.Find("RoomLight").gameObject.SetActive(true);
+
+            TelemetryLogger.Log(this, "Room: Enter", currentRoom.name);
         }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-
-        if (other.gameObject.tag == "roomLighting")
+        if (other.transform == currentRoom)
         {
-            GameObject light = other.transform.Find("RoomLight").gameObject;
-            light.SetActive(false);
+            previousRoom = currentRoom;
+            currentRoom = null;
         }
-
     }
+
 }

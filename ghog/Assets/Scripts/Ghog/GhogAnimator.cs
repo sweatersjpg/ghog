@@ -49,7 +49,9 @@ public class GhogAnimator : MonoBehaviour
         {
             barkSpr.sprite = barkLines[frame % barkLines.Length];
 
-            float dir = player.velocity.x / Mathf.Abs(player.velocity.x);
+            float dir = 1;
+            if (sr.flipX) dir = -1;
+
             barkSpr.transform.parent.localScale = new Vector3(dir, barkSpr.transform.parent.localScale.y, barkSpr.transform.parent.localScale.z) * 1.1f;
         }
         else if (barkSpr.transform.parent.gameObject.activeSelf) barkSpr.transform.parent.gameObject.SetActive(false);
@@ -88,7 +90,11 @@ public class GhogAnimator : MonoBehaviour
     {
         barkSpr.transform.parent.gameObject.SetActive(true);
 
-        float dir = player.velocity.x / Mathf.Abs(player.velocity.x);
+        //if(player.velocity)
+        //float dir = player.velocity.x / Mathf.Abs(player.velocity.x);
+        float dir = 1;
+        if (sr.flipX) dir = -1;
+
         barkSpr.transform.parent.localScale = new Vector3(dir, 1, 1);
 
         barkEnd = Time.time + (3 * animationSpeed)/1000;
