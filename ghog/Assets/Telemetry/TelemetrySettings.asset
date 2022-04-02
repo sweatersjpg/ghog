@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   userName: Slommy Studios
   secret: document oak
-  _version: ghogProt0.2
+  _version: ghogProt0.3
   _serverURL: https://dd-telemetry.herokuapp.com/
   serverCommunication: 0
-  debugLogging: 0
+  debugLogging: 4
