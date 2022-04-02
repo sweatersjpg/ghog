@@ -1,0 +1,732 @@
+fileFormatVersion: 2
+guid: 226be558cb4e56d42989c9360a935175
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4828187748609940504
+    second: ooooo_0
+  - first:
+      213: -3008449193179199429
+    second: ooooo_1
+  - first:
+      213: -5694027352907085165
+    second: ooooo_2
+  - first:
+      213: -7574873871339018718
+    second: ooooo_3
+  - first:
+      213: -9075459715126603528
+    second: ooooo_4
+  - first:
+      213: 7049555164361957619
+    second: ooooo_5
+  - first:
+      213: 6239698675114839868
+    second: ooooo_6
+  - first:
+      213: 2167302944695631352
+    second: ooooo_7
+  - first:
+      213: -6519500134212146353
+    second: ooooo_8
+  - first:
+      213: -8440349782400421027
+    second: ooooo_9
+  - first:
+      213: 1056476002890367381
+    second: ooooo_10
+  - first:
+      213: 4016308447462291862
+    second: ooooo_11
+  - first:
+      213: -7683787312144616868
+    second: ooooo_12
+  - first:
+      213: 754246087399912037
+    second: ooooo_13
+  - first:
+      213: -1200202158987373768
+    second: ooooo_14
+  - first:
+      213: -8498823201724013642
+    second: ooooo_15
+  - first:
+      213: 8697682509477694948
+    second: ooooo_16
+  - first:
+      213: -4328650157232300384
+    second: ooooo_17
+  - first:
+      213: -6959394129834609637
+    second: ooooo_18
+  - first:
+      213: -9130006769338992513
+    second: ooooo_19
+  - first:
+      213: 1213640254388172792
+    second: ooooo_20
+  - first:
+      213: -5914953455330207004
+    second: ooooo_21
+  - first:
+      213: -9114538841709927044
+    second: ooooo_22
+  - first:
+      213: 4656706751905220884
+    second: ooooo_23
+  - first:
+      213: -2258753916258818562
+    second: ooooo_24
+  - first:
+      213: 1851558749898033866
+    second: ooooo_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ooooo_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1919
+        width: 292
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3263fc2d4defcb0800000000000000
+      internalID: -4828187748609940504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_1
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1919
+        width: 261
+        height: 562
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384eb3f567df36d0800000000000000
+      internalID: -3008449193179199429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1919
+        width: 193
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a8d907a40caf0b0800000000000000
+      internalID: -5694027352907085165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_3
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 1919
+        width: 313
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2262370f854a0e690800000000000000
+      internalID: -7574873871339018718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_4
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 1919
+        width: 313
+        height: 593
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0d282197d7d0280800000000000000
+      internalID: -9075459715126603528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_5
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1919
+        width: 311
+        height: 572
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0a054621d05d160800000000000000
+      internalID: 7049555164361957619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_6
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1919
+        width: 172
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f02bbb2ecd79650800000000000000
+      internalID: 6239698675114839868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_7
+      rect:
+        serializedVersion: 2
+        x: 2258
+        y: 1919
+        width: 284
+        height: 632
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdbd3b9b8ec31e10800000000000000
+      internalID: 2167302944695631352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_8
+      rect:
+        serializedVersion: 2
+        x: 2578
+        y: 1919
+        width: 303
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b6c237b251685a0800000000000000
+      internalID: -6519500134212146353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_9
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1279
+        width: 272
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d533aff779addda80800000000000000
+      internalID: -8440349782400421027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_10
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1279
+        width: 263
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5914102c35b59ae00800000000000000
+      internalID: 1056476002890367381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_11
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 1279
+        width: 122
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 699f36fe04bccb730800000000000000
+      internalID: 4016308447462291862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_12
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 1279
+        width: 222
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5277f96624bd5590800000000000000
+      internalID: -7683787312144616868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_13
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 1279
+        width: 282
+        height: 492
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56233b002de977a00800000000000000
+      internalID: 754246087399912037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_14
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 1279
+        width: 262
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83396eece76085fe0800000000000000
+      internalID: -1200202158987373768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_15
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1279
+        width: 133
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b36464a35d1e0a80800000000000000
+      internalID: -8498823201724013642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_16
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 1279
+        width: 212
+        height: 473
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edcb8af82064b870800000000000000
+      internalID: 8697682509477694948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_17
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 1279
+        width: 274
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aeda3dbd9b8de3c0800000000000000
+      internalID: -4328650157232300384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 318
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14f44f49e34b6f90800000000000000
+      internalID: -6959394129834609637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_19
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 638
+        width: 184
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7833a45733bb4180800000000000000
+      internalID: -9130006769338992513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_20
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 638
+        width: 213
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7fbe79167b7d010800000000000000
+      internalID: 1213640254388172792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_21
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 638
+        width: 323
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ead210db2dd9eda0800000000000000
+      internalID: -5914953455330207004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_22
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 638
+        width: 313
+        height: 383
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c752160e637a28180800000000000000
+      internalID: -9114538841709927044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_23
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 638
+        width: 182
+        height: 412
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 419497a5e12ff9040800000000000000
+      internalID: 4656706751905220884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_24
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 638
+        width: 203
+        height: 423
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5ee52d74b47a0e0800000000000000
+      internalID: -2258753916258818562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ooooo_25
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 640
+        width: 315
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca40708fde02b910800000000000000
+      internalID: 1851558749898033866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e2f50d1e036eb974faa2d11f0265cae4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

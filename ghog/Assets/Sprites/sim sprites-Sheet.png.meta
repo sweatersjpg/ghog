@@ -102,7 +102,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -147,7 +146,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -159,7 +158,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -737,33 +736,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      msh: 221604113549609464
-      cat3: -9004739484659893136
-      cat4: 4301662289281038154
-      cat0: 7575458543548040846
-      catrun0: -1473981654977321129
-      brbrun0: -1973542030101275394
-      seed2: 1531392060836622797
-      seed0: -1043046525874520567
-      brb0: 7427559358769240046
-      brb1: 2681865711793963662
-      cat6: 327979343347085289
-      mshrun0: 8582108627326073324
-      catrun1: 4338167148854111018
-      catrun2: 8641714143644179811
-      seed3: 731081977456833575
-      cat1: -4852110651903053126
-      mshfall0: 8621023667307157730
-      mshfall1: 5241713279994646879
-      cat2: -3855112091854002939
-      brbrun1: -3401398409837058199
-      brbrun3: -6833539431750841439
-      cat5: 3346262026393291338
-      seed1: 2403368852962461070
-      brbrun2: 6024293189278661298
-      mshrun1: 608150890056282390
-      mshrun2: -7081773758030838513
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
