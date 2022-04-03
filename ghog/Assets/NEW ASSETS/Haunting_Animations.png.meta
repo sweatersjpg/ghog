@@ -1,7 +1,103 @@
 fileFormatVersion: 2
 guid: 9c1495b073c6944e9a782799e408e2cc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4227309716397334811
+    second: Haunting_Animations_0
+  - first:
+      213: 7025893180157313241
+    second: Haunting_Animations_1
+  - first:
+      213: -105193702374440663
+    second: Haunting_Animations_2
+  - first:
+      213: -111667416695757936
+    second: Haunting_Animations_4
+  - first:
+      213: 4493734147432414472
+    second: Haunting_Animations_10
+  - first:
+      213: -3990518013948523946
+    second: Haunting_Animations_25
+  - first:
+      213: 1776686394337724232
+    second: Haunting_Animations_27
+  - first:
+      213: 1296568361580099391
+    second: Haunting_Animations_28
+  - first:
+      213: -2415480488140234752
+    second: Haunting_Animations_29
+  - first:
+      213: 8231519771832534495
+    second: Haunting_Animations_30
+  - first:
+      213: -856977933872189710
+    second: Haunting_Animations_31
+  - first:
+      213: -7514362352098446333
+    second: Haunting_Animations_36
+  - first:
+      213: -2243150969491587950
+    second: Haunting_Animations_43
+  - first:
+      213: -5483290583840515829
+    second: Haunting_Animations_48
+  - first:
+      213: -6271801539684446861
+    second: Haunting_Animations_51
+  - first:
+      213: 7127792218141475534
+    second: Haunting_Animations_52
+  - first:
+      213: 4713646542912922469
+    second: Haunting_Animations_55
+  - first:
+      213: 1864571538908641513
+    second: Haunting_Animations_57
+  - first:
+      213: -997161505106584093
+    second: Haunting_Animations_58
+  - first:
+      213: -8638012390670059148
+    second: Haunting_Animations_60
+  - first:
+      213: -1242699699726456513
+    second: Haunting_Animations_61
+  - first:
+      213: 8322219882587087428
+    second: Haunting_Animations_62
+  - first:
+      213: -7744124310440413591
+    second: Haunting_Animations_63
+  - first:
+      213: -2560684783665442965
+    second: Haunting_Animations_64
+  - first:
+      213: 4357267970958170416
+    second: Haunting_Animations_65
+  - first:
+      213: 2394917709943318462
+    second: Haunting_Animations_66
+  - first:
+      213: -8739406285672585227
+    second: Haunting_Animations_69
+  - first:
+      213: 7342213652119626072
+    second: Haunting_Animations_70
+  - first:
+      213: -5668868267135580905
+    second: Haunting_Animations_71
+  - first:
+      213: -3061752451083300493
+    second: Haunting_Animations_72
+  - first:
+      213: 3790691501269633130
+    second: Haunting_Animations_73
+  - first:
+      213: 4177204254541962516
+    second: Haunting_Animations_74
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +164,19 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,11 +209,683 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Haunting_Animations_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3908
+        width: 630
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee549ec5349555c0800000000000000
+      internalID: -4227309716397334811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_1
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 3927
+        width: 639
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0cd116f9cf08160800000000000000
+      internalID: 7025893180157313241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_2
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 3927
+        width: 564
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9210d5192e64a8ef0800000000000000
+      internalID: -105193702374440663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_4
+      rect:
+        serializedVersion: 2
+        x: 1946
+        y: 3996
+        width: 617
+        height: 381
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0932dde7317437ef0800000000000000
+      internalID: -111667416695757936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_10
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 4022
+        width: 598
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d70c4f563fc5e30800000000000000
+      internalID: 4493734147432414472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_25
+      rect:
+        serializedVersion: 2
+        x: 3963
+        y: 4039
+        width: 520
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a0dcc4205de98c0800000000000000
+      internalID: -3990518013948523946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_27
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 4042
+        width: 629
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84705c3ccde08a810800000000000000
+      internalID: 1776686394337724232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_28
+      rect:
+        serializedVersion: 2
+        x: 4671
+        y: 4055
+        width: 449
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37fdfa2e065ef110800000000000000
+      internalID: 1296568361580099391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_29
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 3198
+        width: 595
+        height: 515
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000a3863b4d7a7ed0800000000000000
+      internalID: -2415480488140234752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_30
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 3198
+        width: 565
+        height: 575
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5cea9be9b3c3270800000000000000
+      internalID: 8231519771832534495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_31
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 3198
+        width: 597
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe233f0c176b14f0800000000000000
+      internalID: -856977933872189710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_36
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 3198
+        width: 572
+        height: 494
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3047a99e04f97b790800000000000000
+      internalID: -7514362352098446333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_43
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 3198
+        width: 334
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c71e5f31abed0e0800000000000000
+      internalID: -2243150969491587950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_48
+      rect:
+        serializedVersion: 2
+        x: 3374
+        y: 3197
+        width: 266
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0911f5044077e3b0800000000000000
+      internalID: -5483290583840515829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_51
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 3200
+        width: 240
+        height: 498
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d4c55aab516f8a0800000000000000
+      internalID: -6271801539684446861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_52
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 3198
+        width: 94
+        height: 497
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2cd1bf1410be260800000000000000
+      internalID: 7127792218141475534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_55
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 2878
+        width: 95
+        height: 145
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563a21b8e8c3a6140800000000000000
+      internalID: 4713646542912922469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_57
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 2878
+        width: 125
+        height: 315
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8f3fa8fe940e910800000000000000
+      internalID: 1864571538908641513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_58
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 2878
+        width: 135
+        height: 295
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed9d60f4ee5922f0800000000000000
+      internalID: -997161505106584093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_60
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 2878
+        width: 165
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47930b03f7d9f1880800000000000000
+      internalID: -8638012390670059148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_61
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 2878
+        width: 145
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39e15b053b01cee0800000000000000
+      internalID: -1242699699726456513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_62
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 2878
+        width: 183
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442eb44e3e67e7370800000000000000
+      internalID: 8322219882587087428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_63
+      rect:
+        serializedVersion: 2
+        x: 4568
+        y: 2878
+        width: 145
+        height: 332
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9667bb348f7578490800000000000000
+      internalID: -7744124310440413591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_64
+      rect:
+        serializedVersion: 2
+        x: 4868
+        y: 2878
+        width: 165
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f8fdf91ce967cd0800000000000000
+      internalID: -2560684783665442965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_65
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 2878
+        width: 85
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03916204220287c30800000000000000
+      internalID: 4357267970958170416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_66
+      rect:
+        serializedVersion: 2
+        x: 1708
+        y: 2878
+        width: 95
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7a677e7f47c3120800000000000000
+      internalID: 2394917709943318462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_69
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2878
+        width: 95
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f76baa594467b680800000000000000
+      internalID: -8739406285672585227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_70
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 2878
+        width: 155
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8512d977a68c4e560800000000000000
+      internalID: 7342213652119626072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_71
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 2878
+        width: 85
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71546e298522451b0800000000000000
+      internalID: -5668868267135580905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_72
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 2878
+        width: 89
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3719ffa1e587285d0800000000000000
+      internalID: -3061752451083300493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_73
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 2878
+        width: 84
+        height: 138
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68c44226dd3b9430800000000000000
+      internalID: 3790691501269633130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Haunting_Animations_74
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 2878
+        width: 65
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d5932432968f930800000000000000
+      internalID: 4177204254541962516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c1a9df721bc20eb4a80e1535643e5f69
     internalID: 0
     vertices: []
     indices: 
