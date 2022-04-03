@@ -18034,7 +18034,7 @@ Transform:
   m_LocalScale: {x: 1.0597, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936550032
 GameObject:
@@ -23455,8 +23455,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 39, y: 12, z: 20}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 49.287605, y: 12, z: 20}
+  m_Center: {x: 5.1438026, y: 0, z: 0}
 --- !u!82 &1190494254
 AudioSource:
   m_ObjectHideFlags: 0
@@ -43717,7 +43717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2131487270
 SpriteRenderer:
   m_ObjectHideFlags: 0
