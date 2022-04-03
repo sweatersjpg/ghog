@@ -32,6 +32,6 @@ public class CameraController : MonoBehaviour
 
     public void MoveTo(Vector3 newPos)
     {
-        target = newPos;
+        target = newPos + new Vector3(0, 0, 0);
     }
 }

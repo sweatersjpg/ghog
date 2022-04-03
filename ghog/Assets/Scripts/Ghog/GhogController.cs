@@ -15,6 +15,7 @@ public class GhogController : MonoBehaviour
     public Vector3 velocity;
 
     //GameObject mainCamera;
+    GameObject activator; // triggers spookable objects in radius
 
     public float gravity = -0.05f;
     public float deceleration = 0.9f;
