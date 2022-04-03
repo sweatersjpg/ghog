@@ -14,12 +14,13 @@ public class TeleportScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GetComponent<AudioSource>().pitch = Random.Range(0.8f,1.2f);
+        GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.2f);
         GetComponent<AudioSource>().PlayOneShot(doorSFX);
 
         player.transform.position = teleportTarget.transform.position;
 
-        if (shed) {
+        if (shed)
+        {
             if (ghostTurnedOn)
                 ghostOwner.GetComponent<Animator>().SetTrigger("Start");
 
