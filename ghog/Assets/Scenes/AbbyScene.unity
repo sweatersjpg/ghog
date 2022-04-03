@@ -1551,6 +1551,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7916131723590547031, guid: d98a83040242c4028b783925945cf121, type: 3}
+      propertyPath: roomPlay
+      value: 
+      objectReference: {fileID: 8300000, guid: d77c43358280ff64298f4c4fc486b171, type: 3}
+    - target: {fileID: 7916131723590547031, guid: d98a83040242c4028b783925945cf121, type: 3}
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
