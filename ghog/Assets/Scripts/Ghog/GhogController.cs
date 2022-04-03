@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class GhogController : MonoBehaviour
 {
+    [SerializeField] AudioSource dogAudioSource;
+    [SerializeField] AudioClip[] dogBarkSFX;
+    [SerializeField] AudioClip dogFootstep,
+        dogJumpSFX;
 
     Rigidbody rb;
     public Vector3 velocity;
@@ -28,6 +33,7 @@ public class GhogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dogAudioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
 
         cameraController = Camera.main.GetComponent<CameraController>();
@@ -51,6 +57,9 @@ public class GhogController : MonoBehaviour
 
         if (Input.GetKeyDown("e"))
         {
+            dogAudioSource.clip = dogBarkSFX[Random.Range(0, dogBarkSFX.Length)];
+            dogAudioSource.Play();
+
             // trigger nearby objects
             TelemetryLogger.Log(this, "Bark", transform.position);
             GetComponent<GhogAnimator>().StartBark();
@@ -81,6 +90,8 @@ public class GhogController : MonoBehaviour
             velocity.y = jumpForce;
             jumpPressed = 0;
             isGrounded = false;
+
+            dogAudioSource.PlayOneShot(dogJumpSFX);
         }
         if (jumpPressed > 0) jumpPressed--;
 
@@ -103,7 +114,6 @@ public class GhogController : MonoBehaviour
 
         velocity.y += gravity;
         if (velocity.y < 0) velocity.y += gravity;
-        //if (isGrounded && velocity.y < 0) velocity.y = 0;
 
         Vector3 limitedVel = new Vector2(velocity.x, velocity.z);
         limitedVel = Vector2.ClampMagnitude(limitedVel, maxSpeed);
@@ -114,40 +124,31 @@ public class GhogController : MonoBehaviour
         velocity.z *= deceleration;
 
         rb.AddForce(velocity - rb.velocity, ForceMode.VelocityChange);
+
+        if (isGrounded && (velocity.x > 0.95f || velocity.x < -0.95f || velocity.z > 0.95f || velocity.z < -0.95f))
+        {
+            if (!dogAudioSource.isPlaying)
+                dogAudioSource.PlayOneShot(dogFootstep);
+        }
     }
 
-    Transform currentRoom = null;
-    Transform previousRoom;
+    Transform currentRoom;
+    [SerializeField] GameObject[] lights;
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.transform == currentRoom) return;
-        if (other.transform == previousRoom) return;
-
         if (other.gameObject.tag == "roomLighting")
         {
-            if (currentRoom != null) currentRoom.GetComponentInChildren<Light>().gameObject.SetActive(false);
-            previousRoom = currentRoom;
-
             currentRoom = other.transform;
+            GameObject currentLightRoom = currentRoom.Find("RoomLight").gameObject;
 
             Vector3 cameraPos = currentRoom.Find("CameraPosition").position;
             cameraController.MoveTo(cameraPos);
 
-            currentRoom.Find("RoomLight").gameObject.SetActive(true);
+            currentLightRoom.SetActive(true);
+            lights.Except(new GameObject[] { currentLightRoom }).ToList().ForEach(g => g.SetActive(false));
 
             TelemetryLogger.Log(this, "Room: Enter", currentRoom.name);
         }
-
     }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.transform == currentRoom)
-        {
-            previousRoom = currentRoom;
-            currentRoom = null;
-        }
-    }
-
 }
