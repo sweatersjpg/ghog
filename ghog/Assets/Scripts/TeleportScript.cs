@@ -15,6 +15,7 @@ public class TeleportScript : MonoBehaviour
 
         if (shed) {
             ghostOwner.SetActive(true);
+            ghostOwner.GetComponent<Animator>().SetTrigger("Start");
         }
     }
 }
