@@ -8,7 +8,8 @@ public class GhogController : MonoBehaviour
     [SerializeField] AudioSource dogAudioSource;
     [SerializeField] AudioClip[] dogBarkSFX;
     [SerializeField] AudioClip dogFootstep,
-        dogJumpSFX;
+        dogJumpSFX,
+        roomPlay;
 
     Rigidbody rb;
     public Vector3 velocity;
@@ -129,7 +130,7 @@ public class GhogController : MonoBehaviour
         if (isGrounded && (velocity.x > 0.95f || velocity.x < -0.95f || velocity.z > 0.95f || velocity.z < -0.95f))
         {
             if (!dogAudioSource.isPlaying)
-                dogAudioSource.PlayOneShot(dogFootstep);
+                dogAudioSource.PlayOneShot(dogFootstep, 0.5f);
         }
     }
 
@@ -150,6 +151,14 @@ public class GhogController : MonoBehaviour
             lights.Except(new GameObject[] { currentLightRoom }).ToList().ForEach(g => g.SetActive(false));
 
             TelemetryLogger.Log(this, "Room: Enter", currentRoom.name);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "roomLighting")
+        {
+            dogAudioSource.PlayOneShot(roomPlay, 0.5f);
         }
     }
 }
