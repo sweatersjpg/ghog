@@ -128,7 +128,7 @@ public class GhogController : MonoBehaviour
         if (isGrounded && (velocity.x > 0.95f || velocity.x < -0.95f || velocity.z > 0.95f || velocity.z < -0.95f))
         {
             if (!dogAudioSource.isPlaying)
-                dogAudioSource.PlayOneShot(dogFootstep);
+                dogAudioSource.PlayOneShot(dogFootstep, 0.5f);
         }
     }
 
