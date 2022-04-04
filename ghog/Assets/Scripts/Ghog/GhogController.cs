@@ -16,7 +16,7 @@ public class GhogController : MonoBehaviour
     public Vector3 velocity;
 
     //GameObject mainCamera;
-    GameObject activator; // triggers spookable objects in radius
+    //GameObject activator; // triggers spookable objects in radius
 
     public float gravity = -0.05f;
     public float deceleration = 0.9f;
@@ -145,12 +145,18 @@ public class GhogController : MonoBehaviour
     }
 
     Transform currentRoom;
+    Transform previousRoom;
+
     [SerializeField] GameObject[] lights;
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.transform == currentRoom || other.transform == previousRoom) return;
+
         if (other.gameObject.tag == "roomLighting")
         {
+            if(currentRoom) currentRoom.Find("RoomLight").gameObject.SetActive(false);
+            previousRoom = currentRoom;
             currentRoom = other.transform;
             GameObject currentLightRoom = currentRoom.Find("RoomLight").gameObject;
 
@@ -158,9 +164,21 @@ public class GhogController : MonoBehaviour
             cameraController.MoveTo(cameraPos);
 
             currentLightRoom.SetActive(true);
-            lights.Except(new GameObject[] { currentLightRoom }).ToList().ForEach(g => g.SetActive(false));
+            //lights.Except(new GameObject[] { currentLightRoom }).ToList().ForEach(g => g.SetActive(false));
 
+            Debug.Log("room entered");
             TelemetryLogger.Log(this, "Room: Enter", currentRoom.name);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.transform == currentRoom)
+        {
+            currentRoom.Find("RoomLight").gameObject.SetActive(false);
+            previousRoom = currentRoom;
+            currentRoom = null;
+
         }
     }
 
