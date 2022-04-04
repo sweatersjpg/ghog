@@ -39,6 +39,10 @@ public class PauseMenu : MonoBehaviour
 
     public void GoMenu(int menuIndex)
     {
+        Time.timeScale = 1.0f;
+        AudioListener.pause = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(menuIndex);
     }
 
@@ -46,6 +50,16 @@ public class PauseMenu : MonoBehaviour
     {
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("gameVolume", volumeSlider.value);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit(); //build only uwu
+    }
+
+    public void StartGame(int gameIndex)
+    {
+        SceneManager.LoadScene(gameIndex);
     }
 
 }
