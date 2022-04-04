@@ -57,6 +57,8 @@ public class GhogAnimator : MonoBehaviour
         else if (barkSpr.transform.parent.gameObject.activeSelf) barkSpr.transform.parent.gameObject.SetActive(false);
     }
 
+    int lastStepFrame;
+
     void DogAnimation()
     {
         Vector2 vel = new Vector2(player.velocity.x, player.velocity.z);
@@ -78,9 +80,16 @@ public class GhogAnimator : MonoBehaviour
         else if (vel.magnitude > 2f)
         {
             sr.sprite = running[frame % running.Length];
+
+            if (frame != lastStepFrame && (frame == 3 || frame == 6 || frame == 10 || frame == 14))
+            {
+                lastStepFrame = frame;
+                player.doStepSound();
+            }
         } else
         {
             sr.sprite = idle[frame %= idle.Length];
+            lastStepFrame = 0;
         }
     }
 

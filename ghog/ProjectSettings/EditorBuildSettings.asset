@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 2e058a2471928944291d89090fda41b6
   - enabled: 1
-    path: Assets/Scenes/AbbyScene.unity
-    guid: 7c29865db81590a41b2571c2fdc23a05
+    path: Assets/Scenes/Build0.2.unity
+    guid: ea0e3e1dcc0b4584a8367dc6738e1d49
   m_configObjects: {}

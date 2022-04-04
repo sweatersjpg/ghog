@@ -139,11 +139,13 @@ public class GhogController : MonoBehaviour
         velocity.z *= deceleration;
 
         rb.AddForce(velocity - rb.velocity, ForceMode.VelocityChange);
+    }
 
+    public void doStepSound()
+    {
         if (isGrounded && (velocity.x > 0.95f || velocity.x < -0.95f || velocity.z > 0.95f || velocity.z < -0.95f))
         {
-            if (!dogAudioSource.isPlaying)
-                dogAudioSource.PlayOneShot(dogFootstep, 0.5f);
+            if (!dogAudioSource.isPlaying) dogAudioSource.PlayOneShot(dogFootstep, Random.Range(0.4f, 0.5f));
         }
     }
 
