@@ -17,7 +17,7 @@ public class Spookable : MonoBehaviour
     public bool startObjectsAsDeactivated = false;
     public GameObject[] objectsToDeactivate;
 
-    bool isActive = false;
+    public bool isActive = false;
     bool completed = false;
 
     float reboundTimer = 0;
