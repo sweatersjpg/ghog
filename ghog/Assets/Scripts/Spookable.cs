@@ -91,13 +91,19 @@ public class Spookable : MonoBehaviour
 
     public void scareMom()
     {
-        momObj.GetComponent<AudioSource>().PlayOneShot(momScaredSFX);
-        momObj.SetTrigger("scared");
+        if(Vector3.Distance(transform.position, momObj.transform.position) < 3)
+        {
+            momObj.GetComponent<AudioSource>().PlayOneShot(momScaredSFX);
+            momObj.SetTrigger("scared");
+        }
     }
 
     public void scareDad()
     {
-        dadObj.GetComponent<AudioSource>().PlayOneShot(dadScaredSFX);
-        dadObj.SetTrigger("scared");
+        if (Vector3.Distance(transform.position, dadObj.transform.position) < 3)
+        {
+            dadObj.GetComponent<AudioSource>().PlayOneShot(dadScaredSFX);
+            dadObj.SetTrigger("scared");
+        }
     }
 }
