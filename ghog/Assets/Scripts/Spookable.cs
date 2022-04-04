@@ -5,11 +5,14 @@ using UnityEngine;
 public class Spookable : MonoBehaviour
 {
     [SerializeField] AudioClip momScaredSFX,
-        dadScaredSFX;
+        dadScaredSFX,
+        normalScare;
+
     [SerializeField] Animator momObj,
         dadObj;
     [SerializeField] bool isMom,
-        isDad;
+        isDad,
+        isNormalScare;
 
     Animator flame;
     public Color[] colorToggle;
@@ -75,6 +78,9 @@ public class Spookable : MonoBehaviour
 
         if (isDad)
             scareDad();
+
+        if (isNormalScare)
+            normalScareSFx();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -105,5 +111,10 @@ public class Spookable : MonoBehaviour
             dadObj.GetComponent<AudioSource>().PlayOneShot(dadScaredSFX);
             dadObj.SetTrigger("scared");
         }
+    }
+
+    public void normalScareSFx()
+    {
+        GetComponent<AudioSource>().PlayOneShot(normalScare);
     }
 }
