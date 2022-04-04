@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Spookable : MonoBehaviour
 {
+    [SerializeField] AudioClip momScaredSFX;
+    [SerializeField] Animator momObj;
+    [SerializeField] bool isMom;
 
     Animator flame;
     public Color[] colorToggle;
@@ -63,6 +66,9 @@ public class Spookable : MonoBehaviour
 
         // deactivate objects
         for (int i = 0; i < objectsToDeactivate.Length; i++) objectsToDeactivate[i].SetActive(false);
+
+        if (isMom)
+            scareMom();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -77,11 +83,9 @@ public class Spookable : MonoBehaviour
         completed = true;
     }
 
-    [SerializeField] Animator momObj;
-    [SerializeField] bool isMom;
-
     public void scareMom()
     {
+        momObj.GetComponent<AudioSource>().PlayOneShot(momScaredSFX);
         momObj.SetTrigger("scared");
     }
 }
