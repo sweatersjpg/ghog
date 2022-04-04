@@ -868,7 +868,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ghog Gamu
+  m_Text: '- Ghoul''s Best Friend -'
 --- !u!222 &360235803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2489,11 +2489,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 8514099faefc0324e88df6b7ed94805f, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 520e5598ba4e8bf48bc0b361ffaa2922, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3bfc99c44b70f4b41935365f6be815e7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
+  m_Pitch: 0.9
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
