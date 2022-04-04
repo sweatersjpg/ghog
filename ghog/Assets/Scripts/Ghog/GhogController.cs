@@ -36,6 +36,9 @@ public class GhogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         dogAudioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
 
