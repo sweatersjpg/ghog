@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: stoveIdle
+  m_Name: MirrorIdle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -6384110308746820526, guid: 376f5a3d59341d249953f8ae4d965058, type: 3}
+      value: {fileID: -4523178711400299579, guid: b4cf128ead48de745848f3b188e63882, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,7 +40,7 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -6384110308746820526, guid: 376f5a3d59341d249953f8ae4d965058, type: 3}
+    - {fileID: -4523178711400299579, guid: b4cf128ead48de745848f3b188e63882, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
