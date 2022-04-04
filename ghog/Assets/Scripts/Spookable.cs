@@ -91,7 +91,7 @@ public class Spookable : MonoBehaviour
 
     public void scareMom()
     {
-        if(Vector3.Distance(transform.position, momObj.transform.position) < 3)
+        if(Vector3.Distance(transform.position, momObj.transform.position) < 5)
         {
             momObj.GetComponent<AudioSource>().PlayOneShot(momScaredSFX);
             momObj.SetTrigger("scared");
@@ -100,7 +100,7 @@ public class Spookable : MonoBehaviour
 
     public void scareDad()
     {
-        if (Vector3.Distance(transform.position, dadObj.transform.position) < 3)
+        if (Vector3.Distance(transform.position, dadObj.transform.position) < 5)
         {
             dadObj.GetComponent<AudioSource>().PlayOneShot(dadScaredSFX);
             dadObj.SetTrigger("scared");
