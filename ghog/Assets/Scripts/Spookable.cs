@@ -35,7 +35,7 @@ public class Spookable : MonoBehaviour
     {
 
         // if we need to-- reactivate flame after time is up
-        if(needsCompletion && !completed && isActive && Time.time > reboundTimer)
+        if (needsCompletion && !completed && isActive && Time.time > reboundTimer)
         {
             flame.Play("BlueFlameIntro");
             flame.gameObject.GetComponent<SpriteRenderer>().enabled = true;
@@ -56,7 +56,7 @@ public class Spookable : MonoBehaviour
         if (needsCompletion) reboundTimer = Time.time + 2;
 
         // play animations
-        if(animator != null) animator.Play(animationToPlay);
+        if (animator != null) animator.Play(animationToPlay);
 
         // activate objects
         for (int i = 0; i < objectsToActivate.Length; i++) objectsToActivate[i].SetActive(true);
@@ -75,5 +75,13 @@ public class Spookable : MonoBehaviour
     public void SetCompleted()
     {
         completed = true;
+    }
+
+    [SerializeField] Animator momObj;
+    [SerializeField] bool isMom;
+
+    public void scareMom()
+    {
+        momObj.SetTrigger("scared");
     }
 }
