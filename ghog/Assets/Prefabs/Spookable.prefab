@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2052212557596811026
+--- !u!1 &7221661275990613768
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2052212557596811027}
-  - component: {fileID: 2052212557596811025}
-  - component: {fileID: 2052212557596811024}
+  - component: {fileID: 7221661275990613769}
+  - component: {fileID: 7221661275990613771}
+  - component: {fileID: 7221661275990613770}
+  - component: {fileID: 8665650096147922968}
   m_Layer: 9
-  m_Name: Circle
+  m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2052212557596811027
+--- !u!4 &7221661275990613769
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212557596811026}
+  m_GameObject: {fileID: 7221661275990613768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2052212558191857961}
+  m_Father: {fileID: 7221661276569932083}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2052212557596811025
+--- !u!212 &7221661275990613771
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212557596811026}
+  m_GameObject: {fileID: 7221661275990613768}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -51,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: fdfb854c654454635b619e00cd4d2d52, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.25658596, g: 0.5849056, b: 0.31249598, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -83,20 +84,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2052212557596811024
+--- !u!114 &7221661275990613770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212557596811026}
+  m_GameObject: {fileID: 7221661275990613768}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0b4b1a08b9904bb2b7846addb0570af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites: []
---- !u!1 &2052212558191857960
+--- !u!95 &8665650096147922968
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7221661275990613768}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d5de5403900d51b4e870695a91c1dfe9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &7221661276569932082
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,9 +124,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2052212558191857961}
-  - component: {fileID: 2052212558191857958}
-  - component: {fileID: 2052212558191857959}
+  - component: {fileID: 7221661276569932083}
+  - component: {fileID: 7221661276569932092}
+  - component: {fileID: 7221661276569932093}
   m_Layer: 9
   m_Name: Spookable
   m_TagString: Untagged
@@ -114,50 +134,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2052212558191857961
+--- !u!4 &7221661276569932083
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212558191857960}
+  m_GameObject: {fileID: 7221661276569932082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.05, y: -2.305011, z: 0.13}
+  m_LocalPosition: {x: 90.334, y: -3.49, z: 34.398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2052212557596811027}
+  - {fileID: 7221661275990613769}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2052212558191857958
+--- !u!135 &7221661276569932092
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212558191857960}
+  m_GameObject: {fileID: 7221661276569932082}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2052212558191857959
+--- !u!114 &7221661276569932093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052212558191857960}
+  m_GameObject: {fileID: 7221661276569932082}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bc939894863c497298554db6531bd73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorToggle:
-  - {r: 0, g: 0.9245283, b: 0.13268907, a: 1}
-  - {r: 1, g: 0, b: 0.08789873, a: 1}
-  animationsToPlay: []
-  objectsToActivate: []
-  startObjectsAsDeactivated: 0
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  needsCompletion: 1
+  animator: {fileID: 0}
+  animationToPlay: 
+  objectsToActivate:
+  - {fileID: 0}
+  startObjectsAsDeactivated: 1
   objectsToDeactivate: []

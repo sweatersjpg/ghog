@@ -8,12 +8,19 @@ public class Spookable : MonoBehaviour
     Animator flame;
     public Color[] colorToggle;
 
-    public Animation[] animationsToPlay;
+    public bool needsCompletion = true;
+
+    public Animator animator;
+    public string animationToPlay;
+
     public GameObject[] objectsToActivate;
     public bool startObjectsAsDeactivated = false;
     public GameObject[] objectsToDeactivate;
 
     bool isActive = false;
+    bool completed = false;
+
+    float reboundTimer = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -26,14 +33,30 @@ public class Spookable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        // if we need to-- reactivate flame after time is up
+        if(needsCompletion && !completed && isActive && Time.time > reboundTimer)
+        {
+            flame.Play("BlueFlameIntro");
+            flame.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            isActive = false;
+
+            // deactivate thingies
+            for (int i = 0; i < objectsToActivate.Length; i++) objectsToActivate[i].SetActive(false);
+        }
     }
 
     void DoTrigger()
     {
+        if (isActive) return;
+
+        flame.SetTrigger("Fizzle");
+
+        isActive = true;
+        if (needsCompletion) reboundTimer = Time.time + 2;
+
         // play animations
-        //if (animToPlay != null) animToPlay.Play();
-        for (int i = 0; i < animationsToPlay.Length; i++) animationsToPlay[i].Play();
+        if(animator != null) animator.Play(animationToPlay);
 
         // activate objects
         for (int i = 0; i < objectsToActivate.Length; i++) objectsToActivate[i].SetActive(true);
@@ -47,7 +70,10 @@ public class Spookable : MonoBehaviour
         //Debug.Log("triggered!");
         DoTrigger();
 
-        flame.SetTrigger("Fizzle");
+    }
 
+    public void SetCompleted()
+    {
+        completed = true;
     }
 }
