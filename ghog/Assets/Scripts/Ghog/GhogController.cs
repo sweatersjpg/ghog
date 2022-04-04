@@ -5,6 +5,7 @@ using System.Linq;
 
 public class GhogController : MonoBehaviour
 {
+    [SerializeField] GameObject pauseMenuObj;
     [SerializeField] AudioSource dogAudioSource;
     [SerializeField] AudioClip[] dogBarkSFX;
     [SerializeField] AudioClip dogFootstep,
@@ -35,6 +36,9 @@ public class GhogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         dogAudioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
 
@@ -65,6 +69,15 @@ public class GhogController : MonoBehaviour
             // trigger nearby objects
             TelemetryLogger.Log(this, "Bark", transform.position);
             GetComponent<GhogAnimator>().StartBark();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenuObj.SetActive(true);
+            Time.timeScale = 0.0f;
+            AudioListener.pause = true;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
