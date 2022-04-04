@@ -22,12 +22,19 @@ public class Spookable : MonoBehaviour
         
     }
 
+    void DoTigger()
+    {
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered!");
-        isActive = !isActive;
+        //Debug.Log("triggered!");
+        //isActive = !isActive;
 
-        if (isActive) sr.color = colorToggle[1];
-        else sr.color = colorToggle[0];
+        //if (isActive) sr.color = colorToggle[1];
+        //else sr.color = colorToggle[0];
+
+        DoTigger();
     }
 }
